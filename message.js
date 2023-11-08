@@ -1,3 +1,13 @@
+const fs = require('fs');
+const dotenv = require('dotenv');
+
+dotenv.config();
+const name = process.env.NAME;
+const number = process.env.NUNBER;
 
 
-return console.log('{name}の学籍番号は{number}です。')
+function create(name, number) {
+    const result = `${name}の学籍番号は${number}です。`;
+  
+    return result;
+  }
